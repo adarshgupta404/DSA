@@ -2,7 +2,7 @@
 #define MAX 4
 int queue[MAX], rear = -1, front = -1;
 
-void enqueue(void)
+void insert(void)
 {
     if (rear == MAX - 1)
     {
@@ -21,7 +21,7 @@ void enqueue(void)
     return;
 }
 
-void dequeue(void)
+void delete (void)
 {
     if (front == -1)
         printf("QUEUE UNDERFLOW\n");
@@ -61,17 +61,17 @@ int main()
     while (1)
     {
         int a;
-        printf("SIMPLE QUEUE MENU:\t1.INSERT   2.DELETE   3.PEEP   Any key-EXIT\n");
+        printf("\nSIMPLE QUEUE MENU:\t1.INSERT   2.DELETE   3.PEEP   Any key-EXIT\n");
         printf("Enter your choice: ");
         scanf("%d", &a);
         switch (a)
         {
         case 1:
-            enqueue();
+            insert();
             break;
 
         case 2:
-            dequeue();
+            delete ();
             break;
 
         case 3:
@@ -81,7 +81,6 @@ int main()
         default:
             goto end;
         }
-        printf("\n");
     }
 end:
     return 0;

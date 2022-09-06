@@ -4,6 +4,7 @@
 int stack_arr[max];
 int first = -1;
 // stack_arr[0] as top most element
+
 int isFull()
 {
     if (first == max - 1)

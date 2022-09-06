@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define MAX 4
 int queue[MAX], rear = -1, front = -1;
+
 void enqueue(void)
 {
     if (rear == MAX - 1)

@@ -161,7 +161,7 @@ void search(struct node** last)
         }
             temp = temp->next;
     }   
-    printf("Not Present.");
+    printf("%d is not Present.",d);
 }
 
 void reverse(struct node** last)
